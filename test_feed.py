@@ -219,21 +219,27 @@ def toets_variantfotos():
     per_handle = {}
     for r in root.findall("product"):
         per_handle.setdefault(tekst(r, "handle"), []).append(r)
-    fout = 0
+    fout, galerij = 0, {}
     for handle, regels in per_handle.items():
         tokens = {tekst(r, "sku"): oc.smaak_tokens(tekst(r, "option1")) for r in regels}
         for r in regels:
             sku, foto = tekst(r, "sku"), tekst(r, "image")
             eis(bool(foto), f"{sku}: geen variantfoto")
+            # Stock Sync hangt de EERSTE URL van de rij aan de variant.
             links = tekst(r, "image_links").split(",")
-            eis(foto in links, f"{sku}: variantfoto staat niet tussen de productfoto's "
-                               f"(Shopify kan hem dan niet aan de variant hangen)")
+            eis(links[0] == foto, f"{sku}: image_links begint niet met de variantfoto "
+                                  f"(dan krijgt deze smaak de foto van een andere)")
+            eis(len(links) == len(set(links)), f"{sku}: dubbele foto in image_links")
+            galerij.setdefault(handle, []).append(frozenset(links))
             if len(regels) < 2:
                 continue
             anderen = set().union(*(t for s, t in tokens.items() if s != sku)) - tokens[sku]
             if oc.foto_klopt_niet(oc._bestandsnaam(foto), tokens[sku], anderen):
                 fout += 1
                 eis(False, f"{sku}: variantfoto {oc._bestandsnaam(foto)} toont een andere smaak")
+    for handle, sets in galerij.items():
+        eis(len(set(sets)) == 1, f"{handle}: niet elke regel draagt dezelfde galerij "
+                                 f"(alleen de volgorde mag verschillen)")
     print(f"   variantfoto's: {sum(len(r) for r in per_handle.values())} gecontroleerd, "
           f"{fout} met de smaak van een andere variant")
 

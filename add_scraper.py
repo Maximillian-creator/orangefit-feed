@@ -79,15 +79,23 @@ def build_plat_xml(producten):
 
     Bij Kala kwamen op 24-09-2026 zes producten niet binnen: precies de zes met één
     variant, want Stock Sync leest een `<variants>` met één `<variant>` als los object
-    en slaat de rij stil over. Orangefit heeft er elf met één variant.
+    en slaat de rij stil over. Orangefit heeft er tien met één variant (30-09-2026).
+
+    `image_links` begint per regel met de foto van DIE variant, daarna de rest van
+    de galerij. Stock Sync ("koppel de afbeelding aan de variant wanneer de URL op
+    dezelfde rij staat") hangt de eerste URL van de rij aan de variant; met overal
+    dezelfde volgorde kreeg elke smaak de eerste foto (import 30-09-2026). De
+    galerij van het product blijft compleet: elke regel draagt alle foto's.
     """
     root = ET.Element("products")
     for p in producten:
         eerste = p["afbeeldingen"][0] if p["afbeeldingen"] else ""
         for v in p["varianten"]:
+            eigen = v["afbeelding"] or eerste
+            links = [eigen] + [a for a in p["afbeeldingen"] if a != eigen]
             item = ET.SubElement(root, "product")
             _productvelden(item, p)
-            add(item, "image_links", ",".join(p["afbeeldingen"]))
+            add(item, "image_links", ",".join(a for a in links if a))
             _variantvelden(item, v, eerste)
     return root
 
