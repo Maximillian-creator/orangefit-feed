@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product>
+    <sku>OF-VEZ300</sku>
+    <sku_leverancier>VEZ300</sku_leverancier>
+    <barcode>8719324609432</barcode>
+    <title>Orangefit Vezels</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-vezels</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>27.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>27.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-CREA300</sku>
+    <sku_leverancier>CREA300</sku_leverancier>
+    <barcode>8719324609371</barcode>
+    <title>Orangefit Creatine</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-creatine</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>14.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>14.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-POO750</sku>
+    <sku_leverancier>POO750</sku_leverancier>
+    <barcode>8719324609357</barcode>
+    <title>Orangefit Overnight Oats</title>
+    <variant_title>Banana &amp; Berries</variant_title>
+    <handle>orangefit-protein-overnight-oats</handle>
+    <option1>Banana &amp; Berries</option1>
+    <option2/>
+    <price>24.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>24.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-HD300</sku>
+    <sku_leverancier>HD300</sku_leverancier>
+    <barcode>8719324609920</barcode>
+    <title>Orangefit Hydrate</title>
+    <variant_title>Lemon Orange</variant_title>
+    <handle>orangefit-hydrate</handle>
+    <option1>Lemon Orange</option1>
+    <option2/>
+    <price>29.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>29.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-HDRF300</sku>
+    <sku_leverancier>HDRF300</sku_leverancier>
+    <barcode>8719324609395</barcode>
+    <title>Orangefit Hydrate</title>
+    <variant_title>Red Fruits</variant_title>
+    <handle>orangefit-hydrate</handle>
+    <option1>Red Fruits</option1>
+    <option2/>
+    <price>29.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>29.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-COL300</sku>
+    <sku_leverancier>COL300</sku_leverancier>
+    <barcode>8719324609128</barcode>
+    <title>Orangefit Collageen</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-collageen</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>29.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>29.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DBC60-12</sku>
+    <sku_leverancier>DBC60-12</sku_leverancier>
+    <barcode/>
+    <title>Orangefit Diet Bar</title>
+    <variant_title>Choco / Display (12 repen)</variant_title>
+    <handle>orangefit-diet-bar</handle>
+    <option1>Choco</option1>
+    <option2>Display (12 repen)</option2>
+    <price>31.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>31.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DBC60</sku>
+    <sku_leverancier>DBC60</sku_leverancier>
+    <barcode>8719324609661</barcode>
+    <title>Orangefit Diet Bar</title>
+    <variant_title>Choco / Per stuk</variant_title>
+    <handle>orangefit-diet-bar</handle>
+    <option1>Choco</option1>
+    <option2>Per stuk</option2>
+    <price>2.89</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>2.89</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DBSP60-12</sku>
+    <sku_leverancier>DBSP60-12</sku_leverancier>
+    <barcode/>
+    <title>Orangefit Diet Bar</title>
+    <variant_title>Salty Peanuts / Display (12 repen)</variant_title>
+    <handle>orangefit-diet-bar</handle>
+    <option1>Salty Peanuts</option1>
+    <option2>Display (12 repen)</option2>
+    <price>31.90</price>
+    <compare_at_price/>
+    <available>false</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>31.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DBSP60</sku>
+    <sku_leverancier>DBSP60</sku_leverancier>
+    <barcode>8719324609685</barcode>
+    <title>Orangefit Diet Bar</title>
+    <variant_title>Salty Peanuts / Per stuk</variant_title>
+    <handle>orangefit-diet-bar</handle>
+    <option1>Salty Peanuts</option1>
+    <option2>Per stuk</option2>
+    <price>2.89</price>
+    <compare_at_price/>
+    <available>false</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>2.89</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PBCC50-12</sku>
+    <sku_leverancier>PBCC50-12</sku_leverancier>
+    <barcode/>
+    <title>Orangefit Protein Bar</title>
+    <variant_title>Crispy Choco / Display (12 repen)</variant_title>
+    <handle>orangefit-protein-bar</handle>
+    <option1>Crispy Choco</option1>
+    <option2>Display (12 repen)</option2>
+    <price>31.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>31.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PBCC50</sku>
+    <sku_leverancier>PBCC50</sku_leverancier>
+    <barcode>8717953228437</barcode>
+    <title>Orangefit Protein Bar</title>
+    <variant_title>Crispy Choco / Per stuk</variant_title>
+    <handle>orangefit-protein-bar</handle>
+    <option1>Crispy Choco</option1>
+    <option2>Per stuk</option2>
+    <price>2.89</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>2.89</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PBSP50-12</sku>
+    <sku_leverancier>PBSP50-12</sku_leverancier>
+    <barcode/>
+    <title>Orangefit Protein Bar</title>
+    <variant_title>Salty Peanuts / Display (12 repen)</variant_title>
+    <handle>orangefit-protein-bar</handle>
+    <option1>Salty Peanuts</option1>
+    <option2>Display (12 repen)</option2>
+    <price>29.90</price>
+    <compare_at_price/>
+    <available>false</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>29.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PBSP50</sku>
+    <sku_leverancier>PBSP50</sku_leverancier>
+    <barcode>8719324609630</barcode>
+    <title>Orangefit Protein Bar</title>
+    <variant_title>Salty Peanuts / Per stuk</variant_title>
+    <handle>orangefit-protein-bar</handle>
+    <option1>Salty Peanuts</option1>
+    <option2>Per stuk</option2>
+    <price>2.69</price>
+    <compare_at_price/>
+    <available>false</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>2.69</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-CPT240</sku>
+    <sku_leverancier>CPT240</sku_leverancier>
+    <barcode>8719324609982</barcode>
+    <title>Orangefit Clear Protein</title>
+    <variant_title>Tropical</variant_title>
+    <handle>orangefit-clear-protein</handle>
+    <option1>Tropical</option1>
+    <option2/>
+    <price>31.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>31.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-GN300</sku>
+    <sku_leverancier>GN300</sku_leverancier>
+    <barcode>8719324609937</barcode>
+    <title>Orangefit Greens</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-greens</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PBV750</sku>
+    <sku_leverancier>PBV750</sku_leverancier>
+    <barcode>8719324609944</barcode>
+    <title>Orangefit Protein Blend</title>
+    <variant_title>Vanille</variant_title>
+    <handle>orangefit-protein-blend</handle>
+    <option1>Vanille</option1>
+    <option2/>
+    <price>39.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>39.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PBC750</sku>
+    <sku_leverancier>PBC750</sku_leverancier>
+    <barcode>8719324609951</barcode>
+    <title>Orangefit Protein Blend</title>
+    <variant_title>Choco</variant_title>
+    <handle>orangefit-protein-blend</handle>
+    <option1>Choco</option1>
+    <option2/>
+    <price>39.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>39.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-D3</sku>
+    <sku_leverancier>D3</sku_leverancier>
+    <barcode>8719324609173</barcode>
+    <title>Orangefit Vitamine D3</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-vitamine-d3</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>19.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>19.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-O3</sku>
+    <sku_leverancier>O3</sku_leverancier>
+    <barcode>8719324609166</barcode>
+    <title>Orangefit Omega 3</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-omega-3</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>19.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>19.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-M3</sku>
+    <sku_leverancier>M3</sku_leverancier>
+    <barcode>8719324609159</barcode>
+    <title>Orangefit Magnesium</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-magnesium</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>19.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>19.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-HV1000</sku>
+    <sku_leverancier>HV1000</sku_leverancier>
+    <barcode>8719324609043</barcode>
+    <title>Orangefit Hero</title>
+    <variant_title>Vanille</variant_title>
+    <handle>orangefit-hero</handle>
+    <option1>Vanille</option1>
+    <option2/>
+    <price>24.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>24.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-HB1000</sku>
+    <sku_leverancier>HB1000</sku_leverancier>
+    <barcode>8719324609050</barcode>
+    <title>Orangefit Hero</title>
+    <variant_title>Blueberry</variant_title>
+    <handle>orangefit-hero</handle>
+    <option1>Blueberry</option1>
+    <option2/>
+    <price>24.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>24.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PRO</sku>
+    <sku_leverancier>PRO</sku_leverancier>
+    <barcode>8719324609852</barcode>
+    <title>Orangefit Probiotica</title>
+    <variant_title>Default Title</variant_title>
+    <handle>orangefit-probiotica</handle>
+    <option1>Default Title</option1>
+    <option2/>
+    <price>19.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>19.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DV850</sku>
+    <sku_leverancier>DV850</sku_leverancier>
+    <barcode>8719324609029</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Vanille</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Vanille</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DP850</sku>
+    <sku_leverancier>DP850</sku_leverancier>
+    <barcode>8719324609418</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Pistache</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Pistache</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DBN850</sku>
+    <sku_leverancier>DBN850</sku_leverancier>
+    <barcode>8719324609142</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Banaan</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Banaan</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DC850</sku>
+    <sku_leverancier>DC850</sku_leverancier>
+    <barcode>8719324609111</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Choco</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Choco</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DA850</sku>
+    <sku_leverancier>DA850</sku_leverancier>
+    <barcode>8719324609388</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Aardbei</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Aardbei</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DK850</sku>
+    <sku_leverancier>DK850</sku_leverancier>
+    <barcode>8719324609333</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Koffie</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Koffie</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-DB850</sku>
+    <sku_leverancier>DB850</sku_leverancier>
+    <barcode>8719324609036</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Blueberry</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Blueberry</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PV750</sku>
+    <sku_leverancier>PV750</sku_leverancier>
+    <barcode>8717953228413</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Vanille</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Vanille</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PP750</sku>
+    <sku_leverancier>PP750</sku_leverancier>
+    <barcode>8719324609425</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Pistache</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Pistache</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PC750</sku>
+    <sku_leverancier>PC750</sku_leverancier>
+    <barcode>8717953228420</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Choco</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Choco</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PA750</sku>
+    <sku_leverancier>PA750</sku_leverancier>
+    <barcode>8719324609005</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Aardbei</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Aardbei</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PK750</sku>
+    <sku_leverancier>PK750</sku_leverancier>
+    <barcode>8719324609326</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Koffie</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Koffie</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PB750</sku>
+    <sku_leverancier>PB750</sku_leverancier>
+    <barcode>8719324609715</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Banaan</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Banaan</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PM750</sku>
+    <sku_leverancier>PM750</sku_leverancier>
+    <barcode>8719324609180</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Mango</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Mango</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>false</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+</products>

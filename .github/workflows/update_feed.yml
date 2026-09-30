@@ -1,0 +1,39 @@
+name: Orangefit UPDATE-feed
+
+# Prijs + beschikbaarheid van bestaande producten. 2x per dag.
+on:
+  schedule:
+    - cron: "30 5,17 * * *"
+  workflow_dispatch:
+
+# De bot moet de bijgewerkte XML kunnen terugpushen.
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Dependencies installeren
+        run: pip install -r requirements.txt
+      - name: UPDATE-feed scraper draaien
+        run: python scraper.py
+      # De feed pas publiceren als hij betekent wat zijn etiket zegt. Faalt deze
+      # stap, dan wordt er niets gecommit en blijft de vorige feed staan -- veiliger
+      # dan een halve feed, want Stock Sync archiveert wat er niet in staat.
+      - name: Invarianten toetsen
+        run: python test_feed.py --alleen-update
+      - name: XML committen en pushen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add orangefit_feed.xml orangefit_overgeslagen.csv orangefit_telling.json
+          git diff --staged --quiet || git commit -m "UPDATE-feed bijgewerkt: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push
