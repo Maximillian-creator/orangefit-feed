@@ -71,6 +71,7 @@ REQUEST_DELAY = 0.4
 OVERGESLAGEN_FILE = "orangefit_overgeslagen.csv"
 GESCHRAPT_FILE = "orangefit_geschrapt.csv"
 TELLING_FILE = "orangefit_telling.json"
+AFBEELDINGEN_FILE = "orangefit_variantfotos.csv"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; GFY-OrangefitFeed/1.0)",
@@ -573,8 +574,70 @@ def normaliseer_variant(v, barcodes, opties):
     }
 
 
+# --------------------------------------------------------------------------- #
+# Variantfoto's — Orangefit koppelt er twee verkeerd
+# --------------------------------------------------------------------------- #
+# Orangefits Shopify koppelt per variant een foto (`featured_image`). Op 30-09-2026
+# stonden er twee fout: Diet Vanille kreeg de Banaan-zak, Protein Bar Salty Peanuts
+# (display) de Choco-display. Op onze pagina ziet de klant dan een andere smaak dan
+# hij kiest. De bestandsnamen noemen de smaak ("..._DIET_Vanille_1920PX.png"); daarop
+# controleren we. Namen zonder smaak (UUID's bij de Diet Bar) laten we met rust.
+SMAAK_SYNONIEMEN = {"aardbei": "strawberry", "banaan": "banana", "koffie": "coffee",
+                    "pistache": "pistachio", "vanille": "vanilla", "choco": "chocolate",
+                    "peanuts": "peanut"}
+VERPAKKING_WOORDEN = {"display": ("display", "box"), "stuk": ("bar", "folie")}
+AFBEELDING_CORRECTIES = []   # [sku, bron-foto, gebruikte foto, reden]
+
+
+def smaak_tokens(waarde):
+    woorden = [w for w in re.findall(r"[a-z]+", (waarde or "").lower()) if len(w) > 2]
+    return set(woorden) | {SMAAK_SYNONIEMEN[w] for w in woorden if w in SMAAK_SYNONIEMEN}
+
+
+def _bestandsnaam(url):
+    return url.split("?")[0].rsplit("/", 1)[-1].lower()
+
+
+def foto_klopt_niet(bestand, eigen, anderen):
+    """Noemt deze bestandsnaam de smaak van een ándere variant, en niet de eigen?"""
+    return not any(t in bestand for t in eigen) and any(t in bestand for t in anderen)
+
+
+def corrigeer_variantfotos(varianten, afbeeldingen):
+    if len(varianten) < 2:
+        return
+    tokens = {v["sku"]: smaak_tokens(v["optie1"]) for v in varianten}
+    for v in varianten:
+        eigen = tokens[v["sku"]]
+        anderen = set().union(*(t for s, t in tokens.items() if s != v["sku"])) - eigen
+        if not v["afbeelding"] or not foto_klopt_niet(_bestandsnaam(v["afbeelding"]),
+                                                       eigen, anderen):
+            continue
+        kandidaten = [a for a in afbeeldingen
+                      if any(t in _bestandsnaam(a) for t in eigen)]
+        verpakking = next((w for k, w in VERPAKKING_WOORDEN.items()
+                           if k in (v["optie2"] or "").lower()), ())
+        beste = next((a for a in kandidaten
+                      if any(w in _bestandsnaam(a) for w in verpakking)),
+                     kandidaten[0] if kandidaten else "")
+        AFBEELDING_CORRECTIES.append([
+            v["sku"], _bestandsnaam(v["afbeelding"]), _bestandsnaam(beste) if beste else "",
+            "foto van andere smaak vervangen" if beste
+            else "foto van andere smaak, geen betere gevonden — hoofdfoto van het product"])
+        v["afbeelding"] = beste
+
+
+def schrijf_afbeelding_correcties(pad=AFBEELDINGEN_FILE):
+    with open(pad, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["sku", "foto_orangefit", "foto_feed", "reden"])
+        w.writerows(AFBEELDING_CORRECTIES)
+    print(f"   {len(AFBEELDING_CORRECTIES)} variantfoto's gecorrigeerd (vastgelegd in {pad})")
+
+
 def normaliseer(p, varianten, pagina_url, pagina, met_teksten):
     opties = [o.get("name", "") for o in p.get("options", [])]
+    corrigeer_variantfotos(varianten, [i["src"] for i in p.get("images", []) if i.get("src")])
     smaken = {re.sub(r"[^a-z]", "", (v["optie1"] or "").lower()) for v in varianten}
     beschrijving, onderdelen = "", []
     if met_teksten:
@@ -731,4 +794,6 @@ def fetch_products(met_teksten=True):
               f"overgeslagen = {totaal_varianten} in de catalogus")
     if met_teksten:
         schrijf_geschrapt()
+        if not test:
+            schrijf_afbeelding_correcties()
     return producten

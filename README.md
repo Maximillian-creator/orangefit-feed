@@ -66,6 +66,10 @@ Shopify (`orangefitnl.myshopify.com` = `checkout.orangefit.nl`).
 **Add** (plat): parent node `products.product[*]`, variant node **leeg**,
 identificeerder `sku`, variantgroep `handle`, optie 1 `option1`, optie 2 `option2`,
 "varianten samenvoegen in bestaande producten" AAN. Alleen nieuwe producten aanmaken.
+**Variantafbeelding → `image`** (per variant de foto van die smaak; `image_links` is
+alleen de productgalerij). Orangefit koppelt er zelf twee verkeerd (Diet Vanille →
+Banaan-zak, Protein Bar Salty Peanuts display → Choco-display); de feed corrigeert
+dat op bestandsnaam en legt het vast in `orangefit_variantfotos.csv`.
 
 **Update**: match op **barcode** (34 van 38), anders op `sku`. Map `price` en
 `available` (voorraadbeleid). **Niet** `description` of `title`.

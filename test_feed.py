@@ -209,6 +209,35 @@ def toets_plat(add_skus):
           f"{len({tekst(r, 'handle') for r in regels})} producten")
 
 
+def toets_variantfotos():
+    """Elke variant heeft een eigen foto, en die toont niet de smaak van een andere
+    variant. Stock Sync koppelt `image` aan de variant; een verkeerde foto laat de
+    klant een andere smaak zien dan hij kiest (Diet Vanille toonde Banaan, 30-09)."""
+    root = lees(PLAT)
+    if root is None:
+        return
+    per_handle = {}
+    for r in root.findall("product"):
+        per_handle.setdefault(tekst(r, "handle"), []).append(r)
+    fout = 0
+    for handle, regels in per_handle.items():
+        tokens = {tekst(r, "sku"): oc.smaak_tokens(tekst(r, "option1")) for r in regels}
+        for r in regels:
+            sku, foto = tekst(r, "sku"), tekst(r, "image")
+            eis(bool(foto), f"{sku}: geen variantfoto")
+            links = tekst(r, "image_links").split(",")
+            eis(foto in links, f"{sku}: variantfoto staat niet tussen de productfoto's "
+                               f"(Shopify kan hem dan niet aan de variant hangen)")
+            if len(regels) < 2:
+                continue
+            anderen = set().union(*(t for s, t in tokens.items() if s != sku)) - tokens[sku]
+            if oc.foto_klopt_niet(oc._bestandsnaam(foto), tokens[sku], anderen):
+                fout += 1
+                eis(False, f"{sku}: variantfoto {oc._bestandsnaam(foto)} toont een andere smaak")
+    print(f"   variantfoto's: {sum(len(r) for r in per_handle.values())} gecontroleerd, "
+          f"{fout} met de smaak van een andere variant")
+
+
 def toets_verantwoording(feed_skus, met_teksten=True):
     """De zeef mag niets stil weglaten: feed + overgeslagen = de hele catalogus."""
     if not TELLING.exists() or not OVERGESLAGEN.exists():
@@ -249,6 +278,7 @@ def main():
     if not alleen_update:
         add_skus = toets_add(skus)
         toets_plat(add_skus)
+        toets_variantfotos()
     toets_verantwoording(skus, met_teksten=not alleen_update)
 
     if fouten:
