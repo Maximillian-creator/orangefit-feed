@@ -511,6 +511,21 @@
     <prijs_actueel>34.90</prijs_actueel>
   </product>
   <product>
+    <sku>OF-PB750</sku>
+    <sku_leverancier>PB750</sku_leverancier>
+    <barcode>8719324609715</barcode>
+    <title>Orangefit Protein</title>
+    <variant_title>Banaan</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Banaan</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
     <sku>OF-PA750</sku>
     <sku_leverancier>PA750</sku_leverancier>
     <barcode>8719324609005</barcode>
@@ -533,21 +548,6 @@
     <variant_title>Koffie</variant_title>
     <handle>orangefit-protein</handle>
     <option1>Koffie</option1>
-    <option2/>
-    <price>34.90</price>
-    <compare_at_price/>
-    <available>true</available>
-    <in_actie>false</in_actie>
-    <prijs_actueel>34.90</prijs_actueel>
-  </product>
-  <product>
-    <sku>OF-PB750</sku>
-    <sku_leverancier>PB750</sku_leverancier>
-    <barcode>8719324609715</barcode>
-    <title>Orangefit Protein</title>
-    <variant_title>Banaan</variant_title>
-    <handle>orangefit-protein</handle>
-    <option1>Banaan</option1>
     <option2/>
     <price>34.90</price>
     <compare_at_price/>
