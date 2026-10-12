@@ -4369,6 +4369,20 @@
         <image>https://cdn.shopify.com/s/files/1/0280/9426/7464/files/Orangefit_pack_PROTEIN_Choco_1920PX.png?v=1735053310</image>
       </variant>
       <variant>
+        <sku>OF-PB750</sku>
+        <sku_leverancier>PB750</sku_leverancier>
+        <barcode>8719324609715</barcode>
+        <price>34.90</price>
+        <compare_at_price/>
+        <available>true</available>
+        <variant_title>Banaan</variant_title>
+        <option1>Banaan</option1>
+        <option2/>
+        <weight>750</weight>
+        <weight_unit>g</weight_unit>
+        <image>https://cdn.shopify.com/s/files/1/0280/9426/7464/files/Orangefit_pack_PROTEIN_Banaan_1920PX.png?v=1735053310</image>
+      </variant>
+      <variant>
         <sku>OF-PA750</sku>
         <sku_leverancier>PA750</sku_leverancier>
         <barcode>8719324609005</barcode>
@@ -4395,20 +4409,6 @@
         <weight>750</weight>
         <weight_unit>g</weight_unit>
         <image>https://cdn.shopify.com/s/files/1/0280/9426/7464/files/Orangefit_pack_PROTEIN_Koffie_1920PX.png?v=1735053310</image>
-      </variant>
-      <variant>
-        <sku>OF-PB750</sku>
-        <sku_leverancier>PB750</sku_leverancier>
-        <barcode>8719324609715</barcode>
-        <price>34.90</price>
-        <compare_at_price/>
-        <available>true</available>
-        <variant_title>Banaan</variant_title>
-        <option1>Banaan</option1>
-        <option2/>
-        <weight>750</weight>
-        <weight_unit>g</weight_unit>
-        <image>https://cdn.shopify.com/s/files/1/0280/9426/7464/files/Orangefit_pack_PROTEIN_Banaan_1920PX.png?v=1735053310</image>
       </variant>
       <variant>
         <sku>OF-PM750</sku>
