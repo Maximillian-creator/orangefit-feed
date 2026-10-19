@@ -159,11 +159,11 @@
     <handle>orangefit-protein-bar</handle>
     <option1>Crispy Choco</option1>
     <option2>Display (12 repen)</option2>
-    <price>31.90</price>
+    <price>29.90</price>
     <compare_at_price/>
     <available>true</available>
     <in_actie>false</in_actie>
-    <prijs_actueel>31.90</prijs_actueel>
+    <prijs_actueel>29.90</prijs_actueel>
   </product>
   <product>
     <sku>OF-PBCC50</sku>
@@ -174,11 +174,11 @@
     <handle>orangefit-protein-bar</handle>
     <option1>Crispy Choco</option1>
     <option2>Per stuk</option2>
-    <price>2.89</price>
+    <price>2.69</price>
     <compare_at_price/>
     <available>true</available>
     <in_actie>false</in_actie>
-    <prijs_actueel>2.89</prijs_actueel>
+    <prijs_actueel>2.69</prijs_actueel>
   </product>
   <product>
     <sku>OF-PBSP50-12</sku>
