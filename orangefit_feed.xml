@@ -281,7 +281,7 @@
     <option2/>
     <price>19.90</price>
     <compare_at_price/>
-    <available>true</available>
+    <available>false</available>
     <in_actie>false</in_actie>
     <prijs_actueel>19.90</prijs_actueel>
   </product>
