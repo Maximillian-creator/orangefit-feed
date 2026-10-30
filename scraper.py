@@ -69,7 +69,10 @@ def main():
     producten = oc.fetch_products(met_teksten=False)
     regels = sum(len(p["varianten"]) for p in producten)
     oc.controleer_omvang(regels, OUTPUT_FILE)
-    save_xml(build_xml(producten), OUTPUT_FILE)
+    root = build_xml(producten)
+    import prijsrem
+    print(prijsrem.verslag(prijsrem.pas_toe(root, OUTPUT_FILE)))
+    save_xml(root, OUTPUT_FILE)
     print(f"Klaar in {time.time() - start:.0f}s — {len(producten)} producten, "
           f"{regels} varianten")
     print(f"\nFeed-URL voor Stock Sync (Update):\n{FEED_URL}")
