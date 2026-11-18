@@ -466,6 +466,21 @@
     <prijs_actueel>32.90</prijs_actueel>
   </product>
   <product>
+    <sku>OF-DKA850</sku>
+    <sku_leverancier>DKA850</sku_leverancier>
+    <barcode>8719324609876</barcode>
+    <title>Orangefit Diet</title>
+    <variant_title>Kaneel</variant_title>
+    <handle>orangefit-diet</handle>
+    <option1>Kaneel</option1>
+    <option2/>
+    <price>32.90</price>
+    <compare_at_price/>
+    <available>true</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>32.90</prijs_actueel>
+  </product>
+  <product>
     <sku>OF-PV750</sku>
     <sku_leverancier>PV750</sku_leverancier>
     <barcode>8717953228413</barcode>
@@ -567,6 +582,21 @@
     <price>34.90</price>
     <compare_at_price/>
     <available>false</available>
+    <in_actie>false</in_actie>
+    <prijs_actueel>34.90</prijs_actueel>
+  </product>
+  <product>
+    <sku>OF-PKA750</sku>
+    <sku_leverancier>PKA750</sku_leverancier>
+    <barcode/>
+    <title>Orangefit Protein</title>
+    <variant_title>Kaneel</variant_title>
+    <handle>orangefit-protein</handle>
+    <option1>Kaneel</option1>
+    <option2/>
+    <price>34.90</price>
+    <compare_at_price/>
+    <available>true</available>
     <in_actie>false</in_actie>
     <prijs_actueel>34.90</prijs_actueel>
   </product>
