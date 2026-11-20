@@ -376,13 +376,13 @@
     <prijs_actueel>32.90</prijs_actueel>
   </product>
   <product>
-    <sku>OF-DP850</sku>
-    <sku_leverancier>DP850</sku_leverancier>
-    <barcode>8719324609418</barcode>
+    <sku>OF-DKA850</sku>
+    <sku_leverancier>DKA850</sku_leverancier>
+    <barcode>8719324609876</barcode>
     <title>Orangefit Diet</title>
-    <variant_title>Pistache</variant_title>
+    <variant_title>Kaneel</variant_title>
     <handle>orangefit-diet</handle>
-    <option1>Pistache</option1>
+    <option1>Kaneel</option1>
     <option2/>
     <price>32.90</price>
     <compare_at_price/>
@@ -466,13 +466,13 @@
     <prijs_actueel>32.90</prijs_actueel>
   </product>
   <product>
-    <sku>OF-DKA850</sku>
-    <sku_leverancier>DKA850</sku_leverancier>
-    <barcode>8719324609876</barcode>
+    <sku>OF-DP850</sku>
+    <sku_leverancier>DP850</sku_leverancier>
+    <barcode>8719324609418</barcode>
     <title>Orangefit Diet</title>
-    <variant_title>Kaneel</variant_title>
+    <variant_title>Pistache</variant_title>
     <handle>orangefit-diet</handle>
-    <option1>Kaneel</option1>
+    <option1>Pistache</option1>
     <option2/>
     <price>32.90</price>
     <compare_at_price/>
@@ -496,13 +496,13 @@
     <prijs_actueel>34.90</prijs_actueel>
   </product>
   <product>
-    <sku>OF-PP750</sku>
-    <sku_leverancier>PP750</sku_leverancier>
-    <barcode>8719324609425</barcode>
+    <sku>OF-PKA750</sku>
+    <sku_leverancier>PKA750</sku_leverancier>
+    <barcode/>
     <title>Orangefit Protein</title>
-    <variant_title>Pistache</variant_title>
+    <variant_title>Kaneel</variant_title>
     <handle>orangefit-protein</handle>
-    <option1>Pistache</option1>
+    <option1>Kaneel</option1>
     <option2/>
     <price>34.90</price>
     <compare_at_price/>
@@ -586,13 +586,13 @@
     <prijs_actueel>34.90</prijs_actueel>
   </product>
   <product>
-    <sku>OF-PKA750</sku>
-    <sku_leverancier>PKA750</sku_leverancier>
-    <barcode/>
+    <sku>OF-PP750</sku>
+    <sku_leverancier>PP750</sku_leverancier>
+    <barcode>8719324609425</barcode>
     <title>Orangefit Protein</title>
-    <variant_title>Kaneel</variant_title>
+    <variant_title>Pistache</variant_title>
     <handle>orangefit-protein</handle>
-    <option1>Kaneel</option1>
+    <option1>Pistache</option1>
     <option2/>
     <price>34.90</price>
     <compare_at_price/>
